@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+                    <title>KGCT</title>
+
+                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                    <script src="https://maxscdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+                    <link rel="stylesheet" type="text/css" href="{% static 'store/css/main.css' %}">
+                    <script type="text/javascript">
+                        var user = '{{request.user}}'
+                    </script>
+
+
+                    <!-- Favicon -->
+                    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+                    <!-- Google Web Fonts -->
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+                    <!-- Icon Font Stylesheet -->
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+                    <!-- Libraries Stylesheet -->
+                    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+                    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+                    <link href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet" />
+
+                    <!-- Customized Bootstrap Stylesheet -->
+                    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+                    <!-- Template Stylesheet -->
+                    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+                        <meta charset="utf-8">
+                        <title>Tourist - Gulf tours Agency HTML Template</title>
+                        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                        <meta content="" name="keywords">
+                        <meta content="" name="description">
+
+    
+    </head>
+
+    <body>
+    
+
+            <!-- Navbar & Hero Start -->
+            
+<header>
+    <!-- Navbar & Hero Start -->
+            <div class="container-fluid position-relative p-0">
+                <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+
+          
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false"  
+                 data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                                            <a href="" class="navbar-brand p-0">                    
+                        Menu
+                     </a>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                            <script type="text/javascript">
+		                         var user = '{{request.user}}'
+	                        </script>
+
+
+									<style>
+										.dropdown {
+										position: relative;
+										display: inline-block;
+										}
+
+										.dropdown-content {
+										display: none;
+										position: absolute;
+										background-color: #f1f1f1;
+										min-width: 180px;
+										box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+										z-index: 1;
+										}
+
+										.dropdown-content a {
+										color: black;
+										padding: 8px 16px;
+										text-decoration: none;
+										display: block;
+										}
+
+										.dropdown-content a:hover {background-color: #ddd;}
+
+										.dropdown:hover .dropdown-content {display: block;}
+
+
+											</style>
+
+									
+										
+
+									<h5><strong><a class="navbar-brand" href="{% url 'store' %}" style="color: white"><!----></a></strong></h5>
+								
+										
+
+						    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						
+
+						
+						<!--logo-->
+						<img src="{% static 'img/logow.png' %}" style="width: 100px;">
+
+                          <!--Search bar-->
+
+								<!--<form method="get" action="{% url 'search' %}" class="form-inline my-2 my-lg-0">
+									<div class="input-group">
+										<input type="search" name="search" aria-label="Search" placeholder="Search" class="form-control">
+										<div class="input-group-append">
+											<button id="search-button" type="submit" class="btn btn-primary">
+												<i class="fas fa-search"></i>
+											</button>
+										</div>
+									</div>
+								</form>-->
+
+				
+						
+									<!--<a href="index.html" class="nav-item nav-link active">Home</a>-->
+									<!-- <h5>--><a class="nav-item nav-link" href="{% url 'home' %}" style="color: white">Home <span class="sr-only">(current)</span></a></strong><!-- </h5>-->
+									<!-- <h5>--><strong><a class="nav-item nav-link" href="{% url 'store' %}" style="color: white">Services <span class="sr-only">(current)</span></a></strong><!-- </h5>-->
+									<a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+									<a href="{% url 'hotel' %}" class="nav-item nav-link">Hotel</a>
+									<a href="{% url 'visa' %}" class="nav-item nav-link">Visa</a>
+									<a href="{% url 'travelblogs'%}" class="nav-item nav-link">Travel Blogs</a>
+							    <div class="nav-item dropdown">
+									<!--<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+									<div class="dropdown-menu m-0">-->
+
+										<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categories</a>
+											<div class="dropdown-menu m-0">
+													<h5><strong><a style="color: white"></a></strong></h5>
+												<div class="dropdown-content">
+													{% for product in product_categories %}
+														<a href="{% url 'show_items' product.id %}">{{product.name}}</a>
+													{% endfor%}
+												</div>
+											</div>
+							    </div>
+
+
+								<a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+
+							<div class="d-flex justify-content-center">
+										<!-- Profiles -->
+								<div class="mr-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+										{% if request.user.is_authenticated %}
+											{% if request.user.profile.photo %}
+												<a href="{% url 'profilepage' username=user.username %}">
+													<img class="mb-1" src="{{ request.user.profile.photo.url }}" width="35" height="35">
+												</a>
+											{% else %}
+												<a href="{% url 'profilepage' username=user.username %}">
+													<img class="mb-1" src="/static/images/default.png" width="35" height="35">
+												</a>
+											{% endif %}
+											<h6 style="margin-top: 5px;"><strong><a href="{% url 'profilepage' username=request.user.username %}" style="color: jungle green">{{request.user.username}}</a></strong></h6>
+										{% endif %}
+								</div>
+
+
+										<!-- Login/Signup -->
+								<div class="mr-3">
+											{% if request.user.is_authenticated %}
+												<h6><strong><a href="{% url 'order_details' %}" style="color: jungle green">Orders</a></strong></h6>
+												<h6><strong><a href="{% url 'user_logout' %}" style="color: jungle green">Logout</a></strong></h6>
+											{% else %}
+												<h6><strong><a href="{% url 'user_login' %}" style="color: white">Login</a></strong></h6>
+												<h6><strong><a href="{% url 'register' %}" style="color: white">Register</a></strong></h6>
+											{% endif %}
+								</div>
+
+										<!-- Cart/Orders -->
+								<div style="position: relative; display: inline-block;">
+									<a href="{% url 'cart' %}">
+										<div style="display: flex; align-items: center;">
+											<img id="cart-icon" src="{% static 'images/cart.png' %}" style="width: 35px; height: 35px;">
+											<p id="cart-total" style="margin: 0; background-color: red; color: white; padding: 2px 6px; border-radius: 50%;">{{ total_item_cart }}</p>
+										</div>
+									</a>
+									
+								</div>
+
+							
+							</div>
+                        
+						</div>
+                     </div>
+         	</nav>
+
+    
+				<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+					<div class="container py-5">
+						<div class="row justify-content-center py-5">
+							<div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+								<h1 class="display-3 text-white mb-3 animated slideInDown">KENYA GULF CHAIRMAN TOURISM</h1>
+								<p class="fs-4 text-white mb-4 animated slideInDown">Your Dream, Our Destination</p>
+								
+								<div class="position-relative w-75 mx-auto animated slideInDown">
+								<form method="get" action="{% url 'search' %}" class="form-inline my-2 my-lg-0">
+									<input type="search" name="search" aria-label="Search" placeholder="e.g Dubai" class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5">
+									<button class="btn btn-primary rounded-pill py-1.5 px-4 position-absolute top-0 end-0 me-0" style="margin-top: 0px;" type="submit">Search</button> 
+								</form>                        
+								</div>
+								
+					
+							</div>
+						</div>
+					</div>
+				</div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+   
+
+   
+
+   
+
+
+
+
+
+     <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Services</h6>
+                <h1 class="mb-5">Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5>Dubai Visa Services:</h5>
+                            <p>We understand the complexities of obtaining visas for Gulf countries. Our experts can assist you in securing Dubai visit visas, work visas, and visa extensions, ensuring you meet all legal requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                            <h5>Airport Pick-up and Drop-off: </h5>
+                            <p>Arriving in a new country can be daunting, but we've got you covered. Our airport pick-up and drop-off services ensure a stress-free transition from the airport to your destination.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5>Flight Tickets:</h5>
+                            <p>We provide competitive flight ticket booking services, offering options that suit your budget and schedule. Our partnerships with airlines guarantee you great deals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                            <h5>Bed Space: </h5>
+                            <p>Finding accommodation in a new city can be challenging. We offer bed space options in Dubai, making it easier for you to find affordable and convenient places to stay.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+
+    <!-- Package Start -->
+<div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Packages</h6>
+                <h1 class="mb-5">Awesome Packages</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-1.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>90 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i></small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Dubai Visit Visa / Extention</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+                                <span class="title">Best price guaranteed</span><br>
+                                <span class="title">No booking fees</span><br>
+                                <span class="title">Visa Services:</span> Visa application assistance, Work visas, Tourist visas, Visa extensions, Expert guidance<br>
+                                <span class="title">Age Range:</span> 18-39 yrs<br>
+                                <span class="title">Operated in:</span> English
+                            </p>
+
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">$60</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Request</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-2.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i></small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>5 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Dubai Trail: Capitals & Cafés</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                                    <p>
+                                        <span class="title">Best price guaranteed</span><br>
+                                        <span class="title">No booking fees</span><br>
+                                        <span class="title">Tour Type:</span> Small Group Tour<br>
+                                        <span class="title">Activities:</span> City sightseeing & Food tours<br>
+                                        <span class="title">Accommodation:</span> Hostel, Hotel, Sleeper Train & Villa<br>
+                                        <span class="title">Transport:</span> Bus, Train, Boat & Private Vehicle<br>
+                                        <span class="title">Age Range:</span> 18-39 yrs<br>
+                                        <span class="title">Operated in:</span> English
+                                    </p>
+
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">$139</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-4.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Explore the capital of UAE Abu Dhabi</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p><span class="title">Sheikh Zayed Grand Mosque:</span> From $25 per person.<br>
+                                <span class="title">Ferrari World Abu Dhabi:</span> $50-$80 per person.<br>
+                                <span class="title">Louvre Abu Dhabi:</span> $15-$20 per person.<br>
+                                <span class="title">Desert Safari:</span> Starting at $60 per person.<br>
+                                <span class="title">Yas Waterworld Abu Dhabi:</span> $45-$70 per person.
+
+                                Explore Abu Dhabi's culture, architecture, and landscapes.
+                            </p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">$ 40</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-3.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Airport Pick and Drop</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+                                <span class="title">Best price guaranteed</span><br>
+                                <span class="title">No booking fees</span><br>
+                                <span class="title">Service Type:</span> Airport Pick and Drop Services<br>
+                                <span class="title">Description:</span> Convenient and reliable transportation to and from the airport for a stress-free journey.<br>
+                                <span class="title">Options:</span> One-way transfers, Round-trip transfers, Private shuttle service, Luxury chauffeur service<br>
+                                <span class="title">Price Range:</span> Varies based on the selected option.<br>
+                            </p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">$70</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-5.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>1-5Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Dubai Shopping Tours</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+                                
+                                
+                                <span class="title">Tour Type:</span> Dubai Shopping Tours<br>
+                                <span class="title">Description:</span> Explore the world-famous shopping destinations in Dubai, a shopper's paradise.<br>
+                                <span class="title">Included Activities:</span> Visit luxury malls, traditional markets, and bargain hunting spots.<br>
+                                <span class="title">Accommodation:</span> Hotel accommodations in Dubai<br>
+                                <span class="title">Transport:</span> Comfortable transportation to shopping venues<br>
+                                <span class="title">Age Range:</span> Suitable for all ages<br>
+                                
+                            </p>
+
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">$50</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-6.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai/abudhabi</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Photography Services</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+                                
+                                <span class="title">Service Type:</span> Photography Services<br>
+                                <span class="title">Description:</span> Capture your special moments with professional photography services.<br>
+                                <span class="title">Photography Options:</span> Portrait photography, event photography, travel photography, and more.<br>
+                                <span class="title">Photographers:</span> Experienced and skilled photographers for every occasion.<br>
+                                <span class="title">Location:</span> Services available at your preferred location or event.<br>
+                                <span class="title">Operated in:</span> Multiple locations<br>
+                                
+                            </p>
+
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">$ 25</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+
+    
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-7.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>Available</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i></small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Tourist Gifts/Bags</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+                                <span class="title">Tote Bag:</span> A versatile and spacious choice for daily excursions.
+
+                                <span class="specs">Specifications:</span>
+                                <ul>
+                                    <li>Material: Durable canvas or leather</li>
+                                    <li>Size: Medium to large</li>
+                                    <li>Straps: Comfortable and adjustable</li>
+                                    <li>Pockets: Multiple interior and exterior pockets</li>
+                                    <li>Closure: Zipper or magnetic snap</li>
+                                    <li>Colors: Various color options</li>
+                                </ul>
+
+                                <span class="price">Price Range:</span> $30 to $150, depending on brand and materials.
+                            </p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">$51</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-8.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>Available</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i></small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Tourist Gifts/Bags</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+                                <span class="title">Tote Bag:</span> A versatile and spacious choice for daily excursions.
+
+                                <span class="specs">Specifications:</span>
+                                <ul>
+                                    <li>Material: Durable canvas or leather</li>
+                                    <li>Size: Medium to large</li>
+                                    <li>Straps: Comfortable and adjustable</li>
+                                    <li>Pockets: Multiple interior and exterior pockets</li>
+                                    <li>Closure: Zipper or magnetic snap</li>
+                                    <li>Colors: Various color options</li>
+                                </ul>
+
+                                <span class="price">Price Range:</span> $30 to $150, depending on brand and materials.
+                            </p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">$51</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-9.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i></small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>1 lady</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Bed Space</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+                                <span class="title">Service Type:</span> Dubai Bed Space<br>
+                                <span class="title">Description:</span> Affordable and comfortable bed spaces for residents and travelers in Dubai.<br>
+                                <span class="title">Options:</span> Single beds, shared rooms, and dormitory-style accommodations.<br>
+                                <span class="title">Amenities:</span> Access to common areas, kitchen facilities, and more.<br>
+                                <span class="title">Location:</span> Various locations across Dubai.<br>
+                                <span class="title">Price Range:</span> Varies based on the selected bed space and duration of stay.<br>
+                            </p>
+
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">$ 70</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-10.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>1 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i></small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Flight Booking</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+                                <span class="title">Service Type:</span> Flight Booking Services<br>
+                                <span class="title">Description:</span> Your one-stop solution for booking flights to destinations worldwide.<br>
+                                <span class="title">Booking Options:</span> One-way, round-trip, and multi-city flights.<br>
+                                <span class="title">Airlines:</span> Access to a wide range of airlines for various travel preferences.<br>
+                                <span class="title">Extras:</span> Options for seat selection, in-flight meals, and travel insurance.<br>
+                                <span class="title">Price Range:</span> Varies based on the selected flights and travel details.<br>
+                            </p>
+
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">$20</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Request Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-11.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Desert adventure Activities</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+                                
+                                <span class="title">Service Type:</span> Dubai Desert Adventure Activities<br>
+                                <span class="title">Description:</span> Experience thrilling adventures in the mesmerizing Dubai desert.<br>
+                                <span class="title">Included Activities:</span> Dune bashing, camel riding, sandboarding, and more.<br>
+                                <span class="title">Extras:</span> Options for quad biking, hot air ballooning, and desert safaris.<br>
+                                <span class="title">Guides:</span> Experienced guides for safe and enjoyable adventures.<br>
+                                <span class="title">Price Range:</span> Varies based on the selected adventure package and activities.<br>
+                            </p>
+
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">$30</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-12.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Adventure Activities</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Experience the thrill of Dubai's deserts with our adventure activities. From dune bashing to camel rides and hot air balloon adventures, our expert guides will make your desert exploration unforgettable. Join us for an exhilarating journey into the heart of the UAE's stunning landscapes.!</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-13.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Adventure Activities</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Experience the thrill of Dubai's deserts with our adventure activities. From dune bashing to camel rides and hot air balloon adventures, our expert guides will make your desert exploration unforgettable. Join us for an exhilarating journey into the heart of the UAE's stunning landscapes.!</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-14.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Adventure Activities</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Experience the thrill of Dubai's deserts with our adventure activities. From dune bashing to camel rides and hot air balloon adventures, our expert guides will make your desert exploration unforgettable. Join us for an exhilarating journey into the heart of the UAE's stunning landscapes.!</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/package-15.jpg' %}" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Dubai</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Adventure Activities</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Experience the thrill of Dubai's deserts with our adventure activities. From dune bashing to camel rides and hot air balloon adventures, our expert guides will make your desert exploration unforgettable. Join us for an exhilarating journey into the heart of the UAE's stunning landscapes.!</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="{% url 'store' %}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+    <!-- Package End -->
+
+
+    <!-- Booking Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="booking p-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white">
+                        <h6 class="text-white text-uppercase">Booking</h6>
+                        <h1 class="text-white mb-4">Online Booking</h1>
+                        <p class="mb-4">Select your dream Gulf country destination, whether it's the bustling city of Dubai, the cultural gems of Abu Dhabi, or another enticing location.</p>
+                        <p class="mb-4">Great Company to travel with</p>
+                        <a class="btn btn-outline-light py-3 px-5 mt-2" href="">Contact us </a>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-white mb-4">Book A Tour</h1>
+                        
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-transparent" id="select1">
+                                            <option value="1">Destination 1</option>
+                                            <option value="2">Destination 2</option>
+                                            <option value="3">Destination 3</option>
+                                        </select>
+                                        <label for="select1">Destination</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-outline-light w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking Start -->
+
+
+    <!-- Process Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
+                <h1 class="mb-5">3 Easy Steps</h1>
+            </div>
+            <div class="row gy-5 gx-4 justify-content-center">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-globe fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Choose A Destination</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Select your dream Gulf country destination, whether it's the bustling city of Dubai, the cultural gems of Abu Dhabi, or another enticing location.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Pay Online</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"> Secure your travel plans with ease by making a secure online payment. We offer convenient payment options to suit your preferences.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-plane fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Fly Today</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Get ready to embark on your Gulf country adventure! Once you've paid, you're just a few steps away from experiencing the beauty, culture, and opportunities these destinations have to offer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Process Start -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
+                <h1 class="mb-5">Meet Our Guide</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Clients Say!!!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{% static 'img/testimonial-1.jpg' %}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Haile</h5>
+                    <p> Ethiopia</p>
+                    <p class="mb-0">"Ethiopian culture met Middle Eastern magic with this tourist company. Their commitment to making my Dubai adventure unforgettable was evident in their tours and efficient hotel booking. I felt at home in the heart of the Middle East, all thanks to their thoughtful services."</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{% static 'img/testimonial-2.jpg' %}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Amina Hassan</h5>
+                    <p>Tanzania</p>
+                    <p class="mt-2 mb-0">"Tanzania and Dubai may be worlds apart, but this tourist company bridged the gap seamlessly. Their understanding of my culture and needs made my Dubai stay comfortable. From safari tours to booking a fantastic hotel online, every detail was just right."</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{% static 'img/testimonial-3.jpg' %}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Alice</h5>
+                    <p>Kenya</p>
+                    <p class="mt-2 mb-0">"As a Kenyan traveler, Dubai's allure always fascinated me, and this tourist company made it a dream come true. Their local expertise and effortless hotel booking service were a game-changer. Thanks to them, I enjoyed every moment in the Middle East."</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{% static 'img/testimonial-4.jpg' %}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Samuel Kagame </h5>
+                    <p>Rwanda</p>
+                    <p class="mt-2 mb-0">"Coming all the way from Rwanda to Dubai, I was initially overwhelmed by the Middle East's vibrant culture. But this tourist company transformed my experience. Their insightful tours and seamless online hotel booking allowed me to explore the city with ease. Dubai felt like a home away from home."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Company</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Gulf, Dubai, UEA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+971 566 290 589</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@kgct.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="{% static 'img/package-1.jpg' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="{% static 'img/package-2.jpg' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="{% static 'img/package-3.jpg' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="{% static 'img/package-2.jpg' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="{% static 'img/package-3.jpg' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="{% static 'img/package-1.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Let us keep you updated on new travel news.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button href="{% url 'contact' %}" type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="https://freewebsitecode.com">www.kenyagulfchairmantourism.com</a>, All Right Reserved.
+
+                        
+                        Designed By <a class="border-bottom" href="https://freewebsitecode.com">miles</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+     
+
+
+
+
+    <!--Whatsapp-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=+971566290589 &text=Hello%21%20may%20m%C3%A1s%20I%C3%B3n%20have%20moreinformation%202." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+     <!-- endBack to Top -->
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/lib/wow/wow.min.js"></script>
+    <script src="static/lib/easing/easing.min.js"></script>
+    <script src="static/lib/waypoints/waypoints.min.js"></script>
+    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="static/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="{% static 'store/js/main.js' %}"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+</body>
+</html>
