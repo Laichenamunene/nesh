@@ -26,7 +26,8 @@ SECRET_KEY = 'b_jk^-3-9x5@!xfc#ocq8^=9^2ie2-100uxr2hujt))a=&ni9u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', 'now.sh', '127.0.0.1.' 'localhost']
+
 
 
 # Application definition
@@ -143,7 +144,9 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [STATIC_DIR,]
 os.path.join(BASE_DIR), 'static_project'
-STATIC_ROOT = os.path.join(BASE_DIR ,'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR ,'staticfiles','static')
+
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MEDIA_URL = '/images/'
