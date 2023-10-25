@@ -26,11 +26,8 @@ SECRET_KEY = 'b_jk^-3-9x5@!xfc#ocq8^=9^2ie2-100uxr2hujt))a=&ni9u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
-=======
 ALLOWED_HOSTS = ['.vercel.app', 'now.sh', '127.0.0.1.' 'localhost']
 
->>>>>>> e8c18a20fcfb365e768617aba3eb63af69739462
 
 
 # Application definition
@@ -96,12 +93,12 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Bookings',
         'USER': 'Chairman',
         'PASSWORD': 'Admin@-123',
         'HOST': 'localhost',  # Replace with your database server's hostname or IP
-        'PORT': '',  # Leave it empty to use the default PostgreSQL port (5432)
+        'PORT': '3306',  # Leave it empty to use the default PostgreSQL port (5432)
     }
 }
 
